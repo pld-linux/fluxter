@@ -3,14 +3,14 @@ Summary(pl):	Pager dla fluxboksa
 Name:		fluxter
 Version:	0.1.0
 Release:	2
-License:	GPL v2
+License:	GPL v2+
 Group:		X11/Window Managers/Tools
 Source0:	http://benedict.isomedia.com/homes/stevencooper/files/%{name}-%{version}.tar.gz
 # Source0-md5:	6d18553220e8fc33c54762d2e7d31528
 URL:		http://benedict.isomedia.com/homes/stevencooper/projects/fluxter.html
+BuildRequires:	XFree86-devel
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuildRequires:	XFree86-devel
 Requires:	fluxbox
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -47,7 +47,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc AUTHORS BUGS ChangeLog INSTALL NEWS README TODO
+%doc AUTHORS BUGS ChangeLog INSTALL README TODO
 %attr(755,root,root) %{_bindir}/*
 %{_datadir}/fluxbox/%{name}.bb
 %{_datadir}/fluxbox/%{name}.nobb
