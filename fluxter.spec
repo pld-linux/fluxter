@@ -2,14 +2,15 @@ Summary:	A slit pager for fluxbox
 Summary(pl):	Pager dla fluxboksa
 Name:		fluxter
 Version:	0.1.0
-Release:	1
-License:	GPL
+Release:	2
+License:	GPL v2
 Group:		X11/Window Managers/Tools
 Source0:	http://benedict.isomedia.com/homes/stevencooper/files/%{name}-%{version}.tar.gz
 # Source0-md5:	6d18553220e8fc33c54762d2e7d31528
 URL:		http://benedict.isomedia.com/homes/stevencooper/projects/fluxter.html
 BuildRequires:	autoconf
 BuildRequires:	automake
+BuildRequires:	XFree86-devel
 Requires:	fluxbox
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -30,7 +31,9 @@ rm -f missing
 %{__aclocal}
 %{__autoconf}
 %{__automake}
-%configure
+%configure \
+	--with-x
+
 %{__make}
 
 %install
@@ -44,7 +47,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc ChangeLog README
+%doc AUTHORS BUGS COPYING ChangeLog INSTALL NEWS README TODO
 %attr(755,root,root) %{_bindir}/*
 %{_datadir}/fluxbox/%{name}.bb
 %{_datadir}/fluxbox/%{name}.nobb
