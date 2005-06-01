@@ -11,6 +11,7 @@ URL:		http://benedict.isomedia.com/homes/stevencooper/projects/fluxter.html
 BuildRequires:	XFree86-devel
 BuildRequires:	autoconf
 BuildRequires:	automake
+BuildRequires:	libstdc++-devel
 Requires:	fluxbox
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
