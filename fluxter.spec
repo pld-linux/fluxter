@@ -2,16 +2,16 @@ Summary:	A slit pager for fluxbox
 Summary(pl):	Pager dla fluxboksa
 Name:		fluxter
 Version:	0.1.0
-Release:	2
+Release:	3
 License:	GPL v2+
 Group:		X11/Window Managers/Tools
 Source0:	http://benedict.isomedia.com/homes/stevencooper/files/%{name}-%{version}.tar.gz
 # Source0-md5:	6d18553220e8fc33c54762d2e7d31528
 URL:		http://benedict.isomedia.com/homes/stevencooper/projects/fluxter.html
-BuildRequires:	XFree86-devel
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	libstdc++-devel
+BuildRequires:	xorg-lib-libX11-devel
 Requires:	fluxbox
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
