@@ -1,5 +1,5 @@
 Summary:	A slit pager for fluxbox
-Summary(pl):	Pager dla fluxboksa
+Summary(pl.UTF-8):   Pager dla fluxboksa
 Name:		fluxter
 Version:	0.1.0
 Release:	3
@@ -19,10 +19,10 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Fluxter is a workspace pager dockapp, particularly useful with the
 Fluxbox window manager. It is largely based on bbpager for Blackbox.
 
-%description -l pl
-Fluxter to dokowalna aplikacja s³u¿±ca do prze³±czania biurek,
-u¿yteczna szczególnie w po³±czeniu z zarz±dc± okien Fluxbox. W du¿ej
-czê¶ci jest oparta na bbpagerze z Blackboksa.
+%description -l pl.UTF-8
+Fluxter to dokowalna aplikacja sÅ‚uÅ¼Ä…ca do przeÅ‚Ä…czania biurek,
+uÅ¼yteczna szczegÃ³lnie w poÅ‚Ä…czeniu z zarzÄ…dcÄ… okien Fluxbox. W duÅ¼ej
+czÄ™Å›ci jest oparta na bbpagerze z Blackboksa.
 
 %prep
 %setup -q
