@@ -1,5 +1,5 @@
 Summary:	A slit pager for fluxbox
-Summary(pl.UTF-8):   Pager dla fluxboksa
+Summary(pl.UTF-8):	Pager dla fluxboksa
 Name:		fluxter
 Version:	0.1.0
 Release:	3
