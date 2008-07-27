@@ -2,7 +2,7 @@ Summary:	A slit pager for fluxbox
 Summary(pl.UTF-8):	Pager dla fluxboksa
 Name:		fluxter
 Version:	0.1.0
-Release:	3
+Release:	4
 License:	GPL v2+
 Group:		X11/Window Managers/Tools
 Source0:	http://benedict.isomedia.com/homes/stevencooper/files/%{name}-%{version}.tar.gz
