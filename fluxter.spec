@@ -27,7 +27,7 @@ części jest oparta na bbpagerze z Blackboksa.
 
 %prep
 %setup -q
-%patch0 -p1
+%patch -P0 -p1
 
 %build
 rm -f missing
